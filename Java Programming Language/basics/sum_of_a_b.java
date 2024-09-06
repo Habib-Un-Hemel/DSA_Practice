@@ -1,3 +1,4 @@
+package basics;
 public class sum_of_a_b{
     public static void main(String args[]){
         int a = 10;

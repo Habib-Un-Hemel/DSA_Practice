@@ -6,9 +6,7 @@ public class AccessModifiers {
         myAcc.username =  "Hemel";
         System.out.println(myAcc.username);  //possible to access as its public modifiers;
         //myAcc.Password = "abc"; //not possible as its a private modifier
-        myAcc.setPassword("abcde");
-     
-        
+        myAcc.setPassword("abcde");   
     }
 }
 

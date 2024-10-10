@@ -1,6 +1,7 @@
 import java.util.*;
 public class largestNumber {
     public static int largest_number(int numbers[]){
+        // -infinity 
         int largest = Integer.MIN_VALUE;
         for (int i=0; i<numbers.length; i++){
             if (numbers[i]>largest){

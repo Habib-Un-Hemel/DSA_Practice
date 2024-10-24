@@ -1,7 +1,7 @@
 //best case: 1,2,3,4,5 || but normal bubble sort will take O(n^2) even in the best case so 
 //we have introduce the optimize the bubbleSort || if any turns with 0 swap occurs then break will happen
 // O(N)
-
+ 
 
 import java.util.*;
 public class optimize_bubbleSort {

@@ -11,7 +11,7 @@ public class covert_letters_toUppercase {
 
         for (int i =1 ;i<str.length() ;i++){
             if(str.charAt(i)== ' ' && i< str.length()-1){
-                sd.append(str.charAt(i));
+                sd.append(str.charAt(i)); //empty space ta add kortesi
                 i++;
                 sd.append(Character.toUpperCase(str.charAt(i)));
             }else{

@@ -1,5 +1,5 @@
 
-
+//O(n)
 public class covert_letters_toUppercase {
     public static void main(String args[]){
         StringBuilder str = new StringBuilder("hi, i am hemel and loves to code"); 

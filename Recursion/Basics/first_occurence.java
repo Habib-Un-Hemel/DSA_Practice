@@ -18,3 +18,7 @@ public class first_occurence {
         System.out.println(check_first_occ(arr,0,key));
     }
 }
+
+
+// tc O(n)
+//sc O(n)

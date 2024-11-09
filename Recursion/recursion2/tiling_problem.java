@@ -1,4 +1,4 @@
-
+// amazon asked many times
 public class tiling_problem {
 
     public static int tilingProblem(int n){

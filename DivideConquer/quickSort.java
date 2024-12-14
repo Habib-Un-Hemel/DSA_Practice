@@ -25,10 +25,12 @@ public class quickSort {
                 j-- ;
             }
             if(i<j){
+                //i and j swap
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j]= temp;
             }  
+                // pivort value swaped 
                 int temp2 = arr[low];
                 arr[low] = arr[j];
                 arr[j]= temp2;        

@@ -1,8 +1,9 @@
 //Question link: (medium) https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/1478379349/
 //binary search modified 
     // recursive way te binary search liksi
+
+// eita bianry search er iteration diyeo kora jabe  
 public class searchInRotatedSortedArray {
-    
     public static int search(int arr[],int target, int si, int ei){
         //base case
         if(si>ei){
@@ -10,11 +11,9 @@ public class searchInRotatedSortedArray {
         }
         // find mid
         int mid = (si + ei )/2;
-
         if (arr[mid]== target){
             return mid;
         }
-
         // L1 
         if( arr[si]<= arr[mid]){
             //case a: 
@@ -25,7 +24,6 @@ public class searchInRotatedSortedArray {
                 return search(arr,target, mid+1,ei);
             }
         }
-         
         //L2
         else{
             //case c:

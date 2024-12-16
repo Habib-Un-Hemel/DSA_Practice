@@ -1,11 +1,6 @@
 package BackTracking;
 
 public class subsets_string {
-    
-
-
-
-
     public static void subset(String str, String ans, int i){
         //base
         if (i == str.length()){
@@ -21,7 +16,7 @@ public class subsets_string {
         subset(str, ans, i+1);
     }
     public static void main( String args[]){
-        String str = "ab";
+        String str = "abc";
         subset(str," ",0);
 
     }

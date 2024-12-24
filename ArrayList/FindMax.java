@@ -12,7 +12,7 @@ public class FindMax {
         list.add(4);
         list.add(5);
 
-        
+         
         //my code initially =>int max = -100000;
 
         int max = Integer.MIN_VALUE;

@@ -12,9 +12,10 @@ public class FindMax {
         list.add(4);
         list.add(5);
 
-        System.out.println(list);
+        
+        //my code initially =>int max = -100000;
 
-        int max = -100000;
+        int max = Integer.MIN_VALUE;
         for (int i=0; i<list.size();i++){
             if (list.get(i) > max){
                 max = list.get(i);

@@ -15,17 +15,16 @@ public class multi_dimentional_arrayList {
         list2.add(22);
         main_list.add(list2);
 
-        System.out.println(main_list);
+        //System.out.println(main_list);
         
 
         //nested Loop
-        for (int i=0; i<main_list.size();i++){
-            
-            System.out.print(main_list.get(i)+" ");
-            
-            for(int j=0; j<list.size();j++){
-                System.out.print(list.get(j)+" ");
+        for (int i=0; i<main_list.size();i++){ 
+            ArrayList<Integer> currList = main_list.get(i);           
+            for(int j=0; j<currList.size();j++){
+                System.out.print(currList.get(j)+" ");
             }
+            System.out.println();
         }
         }
 }

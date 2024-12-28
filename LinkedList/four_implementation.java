@@ -20,6 +20,39 @@ public class four_implementation {
                 tail = temp;
             }
         }
+        void insertAtBeginning(int data){
+            Node temp = new Node(data);
+            if(head ==null){
+                head = temp;
+                tail = temp;
+            }else{
+                temp.next = head;
+                head = temp;
+            }
+        }
+        void insertAt(int idx, int data){
+            Node t = new Node(data);
+            Node temp = head;
+            if (idx ==size()){
+                insertAtEnd(data);
+                return;
+            }
+            else if (idx ==0){
+                insertAtBeginning(data);
+                return;
+            }
+            else if(idx<0){
+                System.out.println("wrong index");
+            }
+            else if(idx>size()){
+                System.out.println("wrong index");
+            }
+            for(int i=1;i<= idx-1;i++){
+                temp =temp.next;
+            }
+            t.next = temp.next;
+            temp.next = t;
+        }
         void display(){ 
             Node temp = head;
             while (temp!=null) {
@@ -46,6 +79,11 @@ public class four_implementation {
     ll.insertAtEnd(6);
     ll.display();
     System.out.println();
-    System.out.print(ll.size());
+    System.out.println(ll.size());
+    ll.insertAtBeginning(10);
+    ll.display();
+    ll.insertAt(1,100);
+        System.out.println();
+    ll.display();
    } 
 }

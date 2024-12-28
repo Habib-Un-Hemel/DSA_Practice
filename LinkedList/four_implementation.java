@@ -9,7 +9,7 @@ public class four_implementation {
     public static class LinkedList {
         Node head = null; 
         Node tail  = null;
-       
+    //    int data;
         void insertAtEnd(int data){
             Node temp = new Node(data);
             if(head ==null){
@@ -19,6 +19,7 @@ public class four_implementation {
                 tail.next = temp;
                 tail = temp;
             }
+            // size++;
         }
         void insertAtBeginning(int data){
             Node temp = new Node(data);
@@ -29,6 +30,7 @@ public class four_implementation {
                 temp.next = head;
                 head = temp;
             }
+             // size++;
         }
         void insertAt(int idx, int data){
             Node t = new Node(data);
@@ -52,6 +54,7 @@ public class four_implementation {
             }
             t.next = temp.next;
             temp.next = t;
+             // size++;
         }
         int getAt(int idx){
             Node temp=head;
@@ -59,6 +62,24 @@ public class four_implementation {
                 temp = temp.next;
             }
             return temp.data;
+        }
+        void deleteAt(int idx){
+            if(idx ==0){
+                head =head.next;
+                // size--;
+                return;
+            }
+            Node temp = head;
+            for(int i=1;i<idx-1;i++){
+                temp = temp.next;
+            }
+            temp.next =temp.next.next;
+            if(idx ==size()-1){
+                tail =temp;
+            }
+            
+            // size--;
+
         }
         void display(){ 
             Node temp = head;
@@ -95,6 +116,9 @@ public class four_implementation {
      System.out.println();
     
     System.out.println(ll.getAt(4));
+    System.out.println();
+    ll.deleteAt(3);
+    ll.display();
 
    } 
 }

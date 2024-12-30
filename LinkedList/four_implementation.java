@@ -68,6 +68,7 @@ public class four_implementation {
                 head =head.next;
                 // size--;
                 return;
+                //
             }
             Node temp = head;
             for(int i=1;i<idx-1;i++){

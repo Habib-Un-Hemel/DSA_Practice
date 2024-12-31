@@ -19,7 +19,7 @@ public class PrintManuallyWithArray {
     }
     System.out.println(st);
     for(int i =0 ; i<idx;i++){
-        System.out.print(arr[i]+" ");
+        System.out.print(farr[i]+" ");
         st.push(arr[i]);
     }
     System.out.println();

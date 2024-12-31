@@ -9,8 +9,22 @@ public class PrintManuallyWithArray {
         st.push(4);
         st.push(5); 
     
+    int n = st.size();
+    int[] arr = new int[n];
+    int idx = arr.length-1;
+     System.out.println(st);
     
+    for(int i =idx ; i>=0;i--){
+        arr[i] = st.pop();
     }
-
+    System.out.println(st);
+    for(int i =0 ; i<idx;i++){
+        System.out.print(arr[i]+" ");
+        st.push(arr[i]);
+    }
+    System.out.println();
+    System.out.println(st);
     
+
+}  
 }

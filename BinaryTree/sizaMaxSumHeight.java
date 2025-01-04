@@ -44,8 +44,7 @@ public class sizaMaxSumHeight {
         b.right = e;
             b.left = f;
 
-        // size_bad_code(root);
-        // System.out.println(size);
+
         System.out.println(size(root));
     }    
 }

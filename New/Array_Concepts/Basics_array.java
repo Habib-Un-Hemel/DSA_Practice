@@ -96,10 +96,68 @@ public class  basics_array {
         printArray(arrRef5);
 
 
+    //problem4: count the perticular occruarance in a array
+
+    // problem5: find the last occurrence of an element x in the a given array
+    int arr_prob5[]= {1,5,3,5,6,7,9};
+    int target_problem = 5; 
+
+
+    ArrayList<Integer> Temp_arrList = new ArrayList<>();
+    for (int i=0; i<arr_prob5.length; i++){
+        if(arr_prob5[i]==target_problem){
+            Temp_arrList.add(i);
+        }
+    }
+    int len = Temp_arrList.size()-1; 
+    System.out.println(len);
+    System.out.println("the last index:"+ Temp_arrList.get(len));
     
+    //method2 , i took help
+    
+    int lastIndex = -1;
+        for (int i=0; i<arr_prob5.length; i++){
+        if(arr_prob5[i]==target_problem)
+        {
+            lastIndex = i;
+        }
+        
+    }
+    System.out.println("Method2,the last index in: "+ lastIndex);
+
+    //problem6: Count the number of element strictly greater than value X,
+
+    int arr_prob6[]= {1,5,3,5,6,7,9};
+    int x =3;
+    int count =0;
+    for (int i=0; i<arr_prob6.length; i++){
+        if(arr_prob6[i]>x)
+        {
+            count++;
+        }
+    }
+    System.out.println("count: "+count);
+
+    //problem7: check if the given array is sorted or not
+    int arr_prob7[]= {1,2,3,5,66,7,9};
+    Boolean check7 = true;
+    for (int i=0; i< arr_prob7.length-1; i++){
+        if(arr_prob7[i] > arr_prob7[i]+1)
+        {   System.out.println(check7);
+            System.out.println("jsaa");
+            check7 = false;
+            
+        }System.out.println("sorted or not sorted:"+ check7);
+    
+    }
+    System.out.println("sorted or not sorted:"+ check7);
 
 
+
+
+     System.out.println("MainFunction is ending Here !!!!");
 
     }
 }
+
 

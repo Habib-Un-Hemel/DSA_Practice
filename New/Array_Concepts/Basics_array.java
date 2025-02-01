@@ -1,6 +1,24 @@
+import java.util.*;
+
 public class  basics_array {
-    public static void main(String args[]) {
     
+//print method
+    static void printArray(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " "); // Print elements in the same line
+        }
+        System.out.println(); // Print a new line after printing all elements
+    }
+    public static void main(String args[]) {
+/*
+ * covered topics
+ *  - arrary introduction
+ *  - Array declaration
+ *  - Array creation
+ *  - array types
+ *  - Array Operations
+ *  - Array probem(3)
+ */
     //array access
         int arr[] =new int[10];
         System.out.println(arr[7]);
@@ -41,16 +59,47 @@ public class  basics_array {
         }
     }
   
-
-
-
-
+    // +++++++++++++++++++++++++++++++++++++++++
+/*
+ * 
+ * 
+ * 
+ */
+    Scanner sc = new Scanner(System.in);
+    int arrL[] = new int[5];
+    for(int i= 0; i<arrL.length; i++){
+        //arrL[i] = sc.nextInt();
     }
+    // Printing the concatenated array
+        for (int num : arrL) {
+            System.out.print(num + " ");
+            System.out.println();
+        }
+        
+   //Array reference
+    System.out.println("Array reference in Java:"); 
 
+    int arrRef[] ={1,2,4,5,6,67};
+    int arrRef2[] = arrRef;
+    int arrRef3[] = arrRef.clone();
+    int arrRef4[] = Arrays.copyOf(arrRef, 2);
+    int arrRef5[] = Arrays.copyOfRange(arrRef, 0, 4);
+        System.out.println(arrRef); 
+         printArray(arrRef);
+        System.out.println(arrRef2); 
+         printArray(arrRef2);
+        System.out.println(arrRef3); 
+         printArray(arrRef3);
+        System.out.println(arrRef4); 
+        printArray(arrRef4);
+        System.out.println(arrRef5); 
+        printArray(arrRef5);
 
 
     
 
 
+
+    }
 }
 

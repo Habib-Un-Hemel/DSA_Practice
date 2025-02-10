@@ -1,5 +1,12 @@
 import java.util.*;
 public class b_hashmap_apna {
+    //put()
+    //get()
+    //containsKey()
+    //remove()
+    //size()
+    //keySet()
+
     public static void main(String[] args) {
         System.out.println("Hello World");
 

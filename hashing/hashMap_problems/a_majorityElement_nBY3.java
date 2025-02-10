@@ -1,3 +1,17 @@
+// https://leetcode.com/problems/majority-element-ii/
+/*
+and  
+
+229. Majority Element II
+ * Given an integer array of size n, find all elements that appear more than ⌊ n/3 ⌋ times.
+ *  
+ * -> loop on the array and create hashMap
+ * -> chea
+ * 
+ */
+
+//Brute force || O(N^2)
+// here i wrote the better apporach using Hashmap
 import java.util.*;
 public class a_majorityElement_nBY3 {
     public static void main(String[] args) {
